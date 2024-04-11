@@ -1,11 +1,41 @@
+:root {
+    --blue: #89cff0;
+    --yellow: #ffda47;
+}
+
+
 .navbar-text {
     font-family: "Newsreader", serif;
     /* font-optical-sizing: auto; */
     font-weight: 700;
     font-size: 20px;
-
     color: black;
   }
+
+p {
+    font-family: "Newsreader", serif;
+    /* font-optical-sizing: auto; */
+    font-weight: 700;
+    font-size: 14px;
+    color: black;
+}
+
+.menu-section {
+    font-family: "Newsreader", serif;
+    /* font-optical-sizing: auto; */
+    font-weight: 700;
+    font-size: 22px;
+    color: black;
+}
+
+.page-title {
+    font-family: "Newsreader", serif;
+    /* font-optical-sizing: auto; */
+    font-weight: 700;
+    font-size: 38px;
+    text-align: center;
+    color: black;
+}
 
 .background {
     background: linear-gradient(red, yellow);
@@ -15,7 +45,6 @@
     font-family: "Newsreader", serif;
     /* font-optical-sizing: auto; */
     font-weight: 450;
-    
     color: rgb(74, 74, 74);
 }
 
@@ -38,4 +67,27 @@
 
 .credentials {
     background-color: white;
+}
+
+.container-fluid {
+    width: 90%;
+    height: 80%;
+    padding: 0px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.thorne{
+    background-color: var(--blue);
+}
+
+.moulton{
+    background-color: var(--yellow);
 }

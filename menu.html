@@ -7,7 +7,7 @@
     <!-- Linking favicon -->
     <link rel="icon" href="Assets/Plate_Mate_Logo.png" type="image/x-icon">
       <!-- Stylesheet -->
-    <link rel="stylesheet" href="temp-main.css">
+    <link rel="stylesheet" href="Stylesheets/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Google Font Link -->
@@ -20,38 +20,105 @@
     <script type = "text/javascript" src="webscraper/menu-scrape.js"></script>
   </head>
   <body>
-    <h1>Plate Mate Bowdoin</h1>
+    <nav class="navbar navbar-expand-lg shadow-lg navbar-light bg-light fixed-top px-5">
+      <a class="navbar-brand" href="index.html">
+        <img src="Assets/Plate_Mate_Logo.png" height="35" class="d-inline-block align-top" alt="">
+        <a class="navbar-text" href="index.html">Plate Mate Bowdoin</a>
+        <!-- Below is code of how I could potentially use columns to have slogan right under
+        platform name! -->
+        <!-- <div class="col-4">
+          <a class="navbar-text">Plate Mate Bowdoin</a>
+          <p class="slogan"> Let's Eat!</p>
+        </div> -->
+      </a>
+    </nav>
     <div class="container-fluid">
         <div class="row">
-            <h1 style="text-align: center">Dining Hall Menus</h1>
+            <p class="page-title">Dining Hall Menus</p>
+            <p class="menu-section" style="text-align: center">Thursday, April 11th</p>
+            <p class="menu-section" style="text-align: center">Lunch</p>
         </div>
     
         <div class="row">
             <div class="col-md-5 menu thorne">
-                <h1>Thorne Dining Hall</h1>
+              <p class="menu-section" style="text-align: center;">Thorne Dining Hall</p>
                 <div id="thorne-menu">
-                    Placeholder for menu.
+                  <p class="menu-section">Soup</p>
+                  <p>
+                    Hearty Vegetable Soup (VE) <br>
+                    Sweet Potato & Chipolte Soup (VE)
+                  </p>
+                  <p class="menu-section">Salads</p>
+                  <p>
+                    Garlic, White Bean & Spin Salad (V) <br>
+                    Avocado Strawberry Caprese Salad (V)
+                  </p>
+                  <p class="menu-section">Main Courses</p>
+                  <p>
+                    Spicy Maple Chicken Sandwich <br>
+                    Spicy Maple Tofu Sandwich <br>
+                    Fried Buffalo Chicken Burger <br>
+                    BBQ Pulled Pork <br>
+                    Black Bean Burger & Sweet Chili Slaw (VE) <br>
+                    Cheese & Vegetable Quesadilla (V)
+                  </p>
+                  <p class="menu-section">Vegetables</p>
+                  <p>
+                    Steamed Peas (VE)
+                  </p>
+                  <p class="menu-section">Desserts</p>
+                  <p>
+                    Maple Bars
+                  </p>
+
                 </div>
             </div>
             <div class="col-md-2">
-                <!-- placeholder -->
+                
             </div>
             <div class="col-md-5 menu moulton">
-                <h1>Moulton Dining Hall</h1>
+                <p class="menu-section" style="text-align: center;">Moulton Dining Hall</p>
                 <div id="thorne-menu">
-                    Placeholder for menu.
+                  <p class="menu-section">Soup</p>
+                  <p>
+                    Hearty Vegetable Soup (VE) <br>
+                    Sweet Potato & Chipolte Soup (VE)
+                  </p>
+                  <p class="menu-section">Salads</p>
+                  <p>
+                    Garlic, White Bean & Spin Salad (V) <br>
+                    Avocado Strawberry Caprese Salad (V)
+                  </p>
+                  <p class="menu-section">Main Courses</p>
+                  <p>
+                    Spicy Maple Chicken Sandwich <br>
+                    Spicy Maple Tofu Sandwich <br>
+                    Fried Buffalo Chicken Burger <br>
+                    BBQ Pulled Pork <br>
+                    Black Bean Burger & Sweet Chili Slaw (VE) <br>
+                    Cheese & Vegetable Quesadilla (V)
+                  </p>
+                  <p class="menu-section">Vegetables</p>
+                  <p>
+                    Steamed Peas (VE)
+                  </p>
+                  <p class="menu-section">Desserts</p>
+                  <p>
+                    Maple Bars
+                  </p>
+
                 </div>
             </div>
         </div>
     
-        <button onclick="changeColor()">Change color</button>
+        <!-- <button onclick="changeColor()">Change color</button>
         <div id="my-div">
             <p>Text should change color</p>
         </div>
     
         <button onclick="getThorne()">Get Menu</button>
         <div id="thorne-menu">
-        </div>
+        </div> -->
     </div>
 
 
