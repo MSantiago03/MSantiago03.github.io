@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Log On</title>
+  </head>
+  <body>
+    <p>This is our log on page.</p>
+
+    <div id ="login-form">
+      <h2>Login</h2>
+      <form id="login">
+        <div>
+          <label for="login-username">Username:</label>
+          <input type="text" id="login-username" name="login-username">
+        </div>
+        <div>
+          <label for="login-username">Password:</label>
+          <input type="text" id="login-password" name="login-password">
+        </div>
+        <button type="submit">Login</button>
+        <!-- <button type="button" onclick="showRegisterForm()">Show Register</button> -->
+  </form>
+
+
+    <script>
+      // function showRegisterForm() {
+      //   Document.getElementById('login-form').style.display = 'none'
+      //   Document.getElementById('register-form').style.display = 'block'
+      // }
+      // function showLoginForm() {
+      //   Document.getElementById('login-form').style.display = 'none'
+      //   Document.getElementById('register-form').style.display = 'block'
+        
+      // }
+      document.getElementByID("login").addEventListener('submit', function(event) {
+        //get what the user entered
+        var username = document.getElementById('login-username').value;
+        var password= document.getElementById('login-password').value;
+        //let us get the stored values for username and password
+        var storedUsername = localStorage.getItem('username');
+        var storedPassword = localStorage.getItem('password');
+        //check if user has logged in correctly
+        if (username === storedUsername && password == storedPassword) {
+          localStorage.setItem(isLoggedIn, "true");
+          alert("Login successful!");
+          window.location.href = "dining-halls-user.html"
+        } else {
+          alert("Invalid username or password. Please try again")
+        }
+      });
+    </script>
+  </body>
+</html>

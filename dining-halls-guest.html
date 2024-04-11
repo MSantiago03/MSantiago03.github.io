@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dining Halls</title>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+  </head>
+  <body>
+    <p>This is our dining halls page for guests.</p>
+    <py-script src="./menu-scrape.py"></py-script>
+    <script>
+      // Fetch the text file using JavaScript
+      fetch('thorne-menu.txt')
+          .then(response => response.text())
+          .then(text => {
+              // Display the text content in the specified container
+              document.getElementById('text-container').innerText = text;
+          })
+          .catch(error => console.error('Error fetching text file:', error));
+        fetch('moulton-menu.txt')
+          .then(response => response.text())
+          .then(text => {
+              // Display the text content in the specified container
+              document.getElementById('text-container').innerText = text;
+          })
+          .catch(error => console.error('Error fetching text file:', error));
+    </script>
+  </body>
+</html>
