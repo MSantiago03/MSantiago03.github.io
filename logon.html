@@ -5,7 +5,7 @@
     <title>Log On</title>
     <link rel="stylesheet" href="Stylesheets/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+    <script src="Js/script.js"></script>
     <!-- Google Font Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,47 +44,18 @@
               <label for="login-password">Password:</label>
               <input type="password" id="login-password" name="login-password">
             </div>
-            <button type="submit">Login</button>
-            <!-- <button type="button" onclick="showRegisterForm()">Show Register</button> -->
+            <button type="button" onclick="login()">Login</button>
       </div>
       <div class="row">
         <p>Don't have an account?</p>
-        <!-- <form action="/signup.html">
+        <form action="signup.html">
           <button type="submit">Sign Up</button>
-        </form> -->
-        <a href="/signup.html">
-          <button>Sign Up</button>
-        </a>
+        </form>
         
     
       </div>
     </div>
   </form>
 
-
-    <script>
-      document.getElementByID("login").addEventListener("submit", function(event) {
-        //get what the user entered
-        var username = document.getElementById('login-username').value;
-        var password= document.getElementById('login-password').value;
-        //let us get the stored values for username and password
-        let storedUsername = "abc";
-        let storedPassword = "123";
-        // var storedUsername = localStorage.getItem('username');
-        // var storedPassword = localStorage.getItem('password');
-        let test = true;
-        if (test) {
-          window.alert("Alert message here.")
-        }
-        //check if user has logged in correctly
-        if (username === storedUsername && password == storedPassword) {
-          localStorage.setItem(isLoggedIn, "true");
-          alert("Login successful!");
-          window.location.href = "dining-halls-user.html"
-        } else {
-          alert("Invalid username or password. Please try again")
-        }
-      });
-    </script>
   </body>
 </html>
