@@ -15,11 +15,36 @@
   
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  
+    <script src="Js/script.js"></script>
     <!-- Stylesheet -->
     <link rel="stylesheet" href="Stylesheets/main.css">
   </head>
   <body>
+    <div id="form-container">
+      <!-- Our register form lets us create values for a new user.-->
+      <!-- Remember - you don't have to save these values separately. You can
+          use an object that bundles that information instead. -->
+      <div id="register-form">
+          <h2>Register</h2>
+          <form id="register">
+              <div>
+                  <label for="register-username">Username:</label>
+                  <input type="text" id="register-username" name="register-username" required>
+              </div>
+              <div>
+                  <label for="register-password">Password:</label>
+                  <input type="password" id="register-password" name="register-password" required>
+              </div>
+              <button type="submit">Register</button>
+              <button type="button" onclick="showLoginForm()">Login</button>
+          </form>
+      </div>
+  </div>
+
+
+
+
+
     <p>!!! This page is under construction. !!!</p>
     <a href="index.html" class="btn btn-warning rounded-lg" role="button">Return to Home</a>
 
