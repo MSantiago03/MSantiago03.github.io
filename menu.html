@@ -9,7 +9,7 @@
       <!-- Stylesheet -->
     <link rel="stylesheet" href="Stylesheets/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+    <script src="Js/script.js"></script>
     <!-- Google Font Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
       rel="stylesheet">
 
-    <script type = "text/javascript" src="webscraper/menu-scrape.js"></script>
+    <!-- <script type = "text/javascript" src="webscraper/menu-scrape.js"></script> -->
   </head>
   <body>
     <nav class="navbar navbar-expand-lg shadow-lg navbar-light bg-light fixed-top px-5">
@@ -34,13 +34,33 @@
     </nav>
     <div class="container-fluid">
         <div class="row">
-            <p class="page-title">Dining Hall Menus</p>
+          <p class="page-title">Dining Hall Status</p>
+          <div class="col-md-6 menu thorne">
+            <p class="menu-section" style="text-align: center;">Thorne Dining Hall</p>
+            <input onclick="thorneStatusChange()" type="button" value="Check In" id="thorne-status"></input>
+            <p>Students at Thorne: </p>
+            <div id='thorne-pop'></div>
+
+          </div>
+          <div class="col-md-6 menu moulton">
+            <p class="menu-section" style="text-align: center;">Moulton Dining Hall</p>
+            <input onclick="moultStatusChange()" type="button" value="Check In" id="moult-status"></input>
+            <p>Students at Moulton: </p>
+            <div id='moult-pop'></div>
+
+          </div>
+          
+
+        </div>
+      
+        <div class="row">
+            <p class="page-title">Menus</p>
             <p class="menu-section" style="text-align: center">Thursday, April 11th</p>
             <p class="menu-section" style="text-align: center">Lunch</p>
         </div>
     
         <div class="row">
-            <div class="col-md-5 menu thorne">
+            <div class="col-md-6 menu thorne">
               <p class="menu-section" style="text-align: center;">Thorne Dining Hall</p>
                 <div id="thorne-menu">
                   <p class="menu-section">Soup</p>
@@ -73,10 +93,7 @@
 
                 </div>
             </div>
-            <div class="col-md-2">
-                
-            </div>
-            <div class="col-md-5 menu moulton">
+            <div class="col-md-6 menu moulton">
                 <p class="menu-section" style="text-align: center;">Moulton Dining Hall</p>
                 <div id="thorne-menu">
                   <p class="menu-section">Soup</p>
@@ -121,6 +138,57 @@
         </div> -->
     </div>
 
+    <script>
+
+      let thorneCount = 347;
+      document.getElementById('thorne-pop').innerHTML = thorneCount;
+
+      let moultCount = 598;
+      document.getElementById('moult-pop').innerHTML = moultCount;
+
+      function thorneStatusChange() {
+        var elem = document.getElementById("thorne-status");
+        if (elem.value=="Check In") {
+          // localStorage.setItem('thorne-count', currentStatus + 1)
+          thorneCount = thorneCount + 1;
+          elem.value = "Check Out";
+          document.getElementById('thorne-pop').innerHTML = thorneCount;
+        } else {
+          // localStorage.setItem('thorne-count', currentStatus - 1)
+          thorneCount = thorneCount - 1;
+          elem.value = "Check In";
+          document.getElementById('thorne-pop').innerHTML = thorneCount;
+        }
+      }
+
+      function moultStatusChange() {
+        var elem = document.getElementById("moult-status");
+        if (elem.value=="Check In") {
+          // localStorage.setItem('thorne-count', currentStatus + 1)
+          moultCount = moultCount + 1;
+          elem.value = "Check Out";
+          document.getElementById('moult-pop').innerHTML = moultCount;
+        } else {
+          // localStorage.setItem('thorne-count', currentStatus - 1)
+          moultCount = moultCount - 1;
+          elem.value = "Check In";
+          document.getElementById('moult-pop').innerHTML = moultCount;
+        }
+      }
+    </script>
+
+const ship = { name: "black pearl", captain: "Jack Sparrow" };
+const originalStringifiedForStorgage = JSON.stringify(ship);
+localStorage.setItem("ship", JSON.stringify(ship));
+
+// Retrieves the string and converts it to a JavaScript object 
+const retrievedString = localStorage.getItem("ship");
+const parsedObject = JSON.parse(retrievedString);
+
+// Modifies the object, converts it to a string and replaces the existing `ship` in LocalStorage
+parsedObject.name = "newName";
+const modifiedndstrigifiedForStorage = JSON.stringify(parsedObject);
+localStorage.setItem("ship", strigifiedForStorage);
 
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
