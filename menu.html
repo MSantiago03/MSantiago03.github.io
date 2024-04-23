@@ -35,14 +35,16 @@
     <div class="container-fluid">
         <div class="row">
           <p class="page-title">Dining Hall Status</p>
-          <div class="col-md-6 menu thorne">
-            <p class="menu-section" style="text-align: center;">Thorne Dining Hall</p>
-            <input onclick="thorneStatusChange()" type="button" value="Check In" id="thorne-status"></input>
-            <p>Students at Thorne: </p>
-            <div id='thorne-pop'></div>
-
+          <div class="col-md-6">
+            <div class="menu thorne">
+              <p class="menu-section" style="text-align: center;">Thorne Dining Hall</p>
+              <input onclick="thorneStatusChange()" type="button" value="Check In" id="thorne-status"></input>
+              <p>Students at Thorne: </p>
+              <div id='thorne-pop'></div>
+            </div>
           </div>
-          <div class="col-md-6 menu moulton">
+          <div class="col-md-6">
+            
             <p class="menu-section" style="text-align: center;">Moulton Dining Hall</p>
             <input onclick="moultStatusChange()" type="button" value="Check In" id="moult-status"></input>
             <p>Students at Moulton: </p>
@@ -60,7 +62,7 @@
         </div>
     
         <div class="row">
-            <div class="col-md-6 menu thorne">
+            <div class="col-md-6">
               <p class="menu-section" style="text-align: center;">Thorne Dining Hall</p>
                 <div id="thorne-menu">
                   <p class="menu-section">Soup</p>
@@ -93,7 +95,7 @@
 
                 </div>
             </div>
-            <div class="col-md-6 menu moulton">
+            <div class="col-md-6">
                 <p class="menu-section" style="text-align: center;">Moulton Dining Hall</p>
                 <div id="thorne-menu">
                   <p class="menu-section">Soup</p>
@@ -176,20 +178,6 @@
         }
       }
     </script>
-
-const ship = { name: "black pearl", captain: "Jack Sparrow" };
-const originalStringifiedForStorgage = JSON.stringify(ship);
-localStorage.setItem("ship", JSON.stringify(ship));
-
-// Retrieves the string and converts it to a JavaScript object 
-const retrievedString = localStorage.getItem("ship");
-const parsedObject = JSON.parse(retrievedString);
-
-// Modifies the object, converts it to a string and replaces the existing `ship` in LocalStorage
-parsedObject.name = "newName";
-const modifiedndstrigifiedForStorage = JSON.stringify(parsedObject);
-localStorage.setItem("ship", strigifiedForStorage);
-
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
