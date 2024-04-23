@@ -37,19 +37,25 @@
           <p class="page-title">Dining Hall Status</p>
           <div class="col-md-6">
             <div class="menu thorne">
-              <p class="menu-section" style="text-align: center;">Thorne Dining Hall</p>
-              <input onclick="thorneStatusChange()" type="button" value="Check In" id="thorne-status"></input>
-              <p>Students at Thorne: </p>
-              <div id='thorne-pop'></div>
+              <p class="menu-section center">Thorne Dining Hall</p>
+              <div class="center">
+                <input onclick="thorneStatusChange()" type="button" class="btn btn-light" value="Check In" id="thorne-status"></input>
+              </div>
+              <br>
+              <p style="text-align: center">Students at Thorne: </p>
+              <p style="text-align: center" class="page-title" id='thorne-pop'></p>
             </div>
           </div>
           <div class="col-md-6">
-            
-            <p class="menu-section" style="text-align: center;">Moulton Dining Hall</p>
-            <input onclick="moultStatusChange()" type="button" value="Check In" id="moult-status"></input>
-            <p>Students at Moulton: </p>
-            <div id='moult-pop'></div>
-
+            <div class="menu moulton">
+              <p class="menu-section" style="text-align: center;">Moulton Dining Hall</p>
+              <div class="center">
+                <input onclick="moultStatusChange()" type="button" class="btn btn-light" value="Check In" id="moult-status"></input>
+              </div>
+              <br>
+              <p style="text-align: center">Students at Moulton: </p>
+              <p style="text-align: center" class="page-title" id='moult-pop'></p>
+            </div>
           </div>
           
 
@@ -63,41 +69,44 @@
     
         <div class="row">
             <div class="col-md-6">
-              <p class="menu-section" style="text-align: center;">Thorne Dining Hall</p>
-                <div id="thorne-menu">
-                  <p class="menu-section">Soup</p>
-                  <p>
-                    Hearty Vegetable Soup (VE) <br>
-                    Sweet Potato & Chipolte Soup (VE)
-                  </p>
-                  <p class="menu-section">Salads</p>
-                  <p>
-                    Garlic, White Bean & Spin Salad (V) <br>
-                    Avocado Strawberry Caprese Salad (V)
-                  </p>
-                  <p class="menu-section">Main Courses</p>
-                  <p>
-                    Spicy Maple Chicken Sandwich <br>
-                    Spicy Maple Tofu Sandwich <br>
-                    Fried Buffalo Chicken Burger <br>
-                    BBQ Pulled Pork <br>
-                    Black Bean Burger & Sweet Chili Slaw (VE) <br>
-                    Cheese & Vegetable Quesadilla (V)
-                  </p>
-                  <p class="menu-section">Vegetables</p>
-                  <p>
-                    Steamed Peas (VE)
-                  </p>
-                  <p class="menu-section">Desserts</p>
-                  <p>
-                    Maple Bars
-                  </p>
+              <div class="menu thorne">
+                <p class="menu-section" style="text-align: center;">Thorne Dining Hall</p>
+                  <div id="thorne-menu">
+                    <p class="menu-section">Soup</p>
+                    <p>
+                      Hearty Vegetable Soup (VE) <br>
+                      Sweet Potato & Chipolte Soup (VE)
+                    </p>
+                    <p class="menu-section">Salads</p>
+                    <p>
+                      Garlic, White Bean & Spin Salad (V) <br>
+                      Avocado Strawberry Caprese Salad (V)
+                    </p>
+                    <p class="menu-section">Main Courses</p>
+                    <p>
+                      Spicy Maple Chicken Sandwich <br>
+                      Spicy Maple Tofu Sandwich <br>
+                      Fried Buffalo Chicken Burger <br>
+                      BBQ Pulled Pork <br>
+                      Black Bean Burger & Sweet Chili Slaw (VE) <br>
+                      Cheese & Vegetable Quesadilla (V)
+                    </p>
+                    <p class="menu-section">Vegetables</p>
+                    <p>
+                      Steamed Peas (VE)
+                    </p>
+                    <p class="menu-section">Desserts</p>
+                    <p>
+                      Maple Bars
+                    </p>
 
+                  </div>
                 </div>
             </div>
             <div class="col-md-6">
+              <div class="menu moulton">
                 <p class="menu-section" style="text-align: center;">Moulton Dining Hall</p>
-                <div id="thorne-menu">
+                <div id="moult-menu">
                   <p class="menu-section">Soup</p>
                   <p>
                     Hearty Vegetable Soup (VE) <br>
@@ -127,6 +136,7 @@
                   </p>
 
                 </div>
+              </div>
             </div>
         </div>
     

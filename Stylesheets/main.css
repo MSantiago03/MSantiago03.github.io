@@ -20,6 +20,12 @@ p {
     color: black;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 .menu-section {
     font-family: "Newsreader", serif;
     /* font-optical-sizing: auto; */
