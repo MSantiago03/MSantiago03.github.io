@@ -72,7 +72,6 @@ p {
 .container-fluid {
     width: 90%;
     height: 80%;
-    padding: 0px;
     align-content: center;
     margin-left: auto;
     margin-right: auto;
@@ -90,4 +89,9 @@ p {
 
 .moulton{
     background-color: var(--yellow);
+}
+
+/* This is to stack sign up input over each other */
+input, label {
+    display:block;
 }

@@ -1,61 +1,66 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Log On</title>
-    <link rel="stylesheet" href="Stylesheets/main.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="Js/script.js"></script>
-    <!-- Google Font Link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
-      rel="stylesheet">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg shadow-lg navbar-light bg-light fixed-top px-5">
-      <a class="navbar-brand" href="index.html">
-        <img src="Assets/Plate_Mate_Logo.png" height="35" class="d-inline-block align-top" alt="">
-        <a class="navbar-text" href="index.html">Plate Mate Bowdoin</a>
-        <!-- Below is code of how I could potentially use columns to have slogan right under
-        platform name! -->
-        <!-- <div class="col-4">
-          <a class="navbar-text">Plate Mate Bowdoin</a>
-          <p class="slogan"> Let's Eat!</p>
-        </div> -->
-      </a>
-    </nav>
+
+<head>
+  <meta charset="utf-8">
+  <title>Log On</title>
+  <!-- Google Font Link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="Js/script.js"></script>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="Stylesheets/main.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg shadow-lg navbar-light bg-light fixed-top px-5">
+    <a class="navbar-brand" href="index.html">
+      <img src="Assets/Plate_Mate_Logo.png" height="35" class="d-inline-block align-top" alt="">
+      <a class="navbar-text" href="index.html">Plate Mate Bowdoin</a>
+      <!-- Below is code of how I could potentially use columns to have slogan right under
+          platform name! -->
+      <!-- <div class="col-4">
+            <a class="navbar-text">Plate Mate Bowdoin</a>
+            <p class="slogan"> Let's Eat!</p>
+          </div> -->
+    </a>
+  </nav>
+
+
+
+  <div class="container-fluid container-fluid pt-5 mt-5 d-flex flex-column justify-content-center align-items-center">
 
     <p class="page-title">Welcome back!</p>
     <p class="page-title">Log in below.</p>
 
+    <div class="row">
+      <div id="login-form">
 
-    <div class="container-fluid">
-      <div class="row">
-        <div id ="login-form">
-          <h2>Login</h2>
-          <form id="login">
-            <div>
-              <label for="login-username">Username:</label>
-              <input type="text" id="login-username" name="login-username">
-            </div>
-            <div>
-              <label for="login-password">Password:</label>
-              <input type="password" id="login-password" name="login-password">
-            </div>
-            <button type="button" onclick="login()">Login</button>
-      </div>
-      <div class="row">
-        <p>Don't have an account?</p>
-        <form action="signup.html">
-          <button type="submit">Sign Up</button>
+        <form id="login">
+          <div>
+            <label for="login-username">Username:</label>
+            <input type="text" id="login-username" name="login-username">
+          </div>
+          <div>
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" name="login-password">
+          </div>
+          <button class="btn btn-primary rounded-lg mt-3 mb-3" type="button" onclick="login()">Login</button>
+          
+          <p pb-0>Don't have an account?</p>
+          <a href="signup.html" class="btn btn-warning rounded-lg " role="button">Sign Up</a>
+
         </form>
-        
-    
       </div>
     </div>
-  </form>
 
-  </body>
+
+</body>
+
 </html>
