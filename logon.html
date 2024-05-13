@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Log On</title>
+  <!-- Linking favicon -->
+  <link rel="icon" href="Assets/PlateMateFaviconTransparent.png" type="image/x-icon">
   <!-- Google Font Link -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,49 +20,46 @@
   <link rel="stylesheet" href="Stylesheets/main.css">
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg shadow-lg navbar-light bg-light fixed-top px-5">
-    <a class="navbar-brand" href="index.html">
-      <img src="Assets/Plate_Mate_Logo.png" height="35" class="d-inline-block align-top" alt="">
-      <a class="navbar-text" href="index.html">Plate Mate Bowdoin</a>
-      <!-- Below is code of how I could potentially use columns to have slogan right under
-          platform name! -->
-      <!-- <div class="col-4">
-            <a class="navbar-text">Plate Mate Bowdoin</a>
-            <p class="slogan"> Let's Eat!</p>
-          </div> -->
-    </a>
-  </nav>
+<body class="no_scroll">
+  <div class="row">
+    <nav class="navbar navbar-expand-lg shadow-lg bg-light fixed-top px-5">
+      <a class="navbar-brand" href="index.html">
+        <img src="Assets/Plate_Mate_Logo.png" height="35" class="d-inline-block align-top" alt="">
+        <a class="navbar-text" href="index.html">Plate Mate Bowdoin</a>
+      </a>
+    </nav>
+  </div>
 
+  <div class="container-fluid">
+    <div class="row no-gutters">
+      <div class="col-6 no-gutters d-flex flex-column justify-content-center align-items-center" 
+      id="form-container">
+        <p class="page-title">Welcome back!</p>
+        <p class="page-title">Log in below.</p>
+        <div id="login-form">
+          <form id="login">
+            <div>
+              <label for="login-username">Username:</label>
+              <input type="text" id="login-username" name="login-username">
+            </div>
+            <div>
+              <label for="login-password">Password:</label>
+              <input type="password" id="login-password" name="login-password">
+            </div>
+            <button class="btn btn-primary rounded-lg mt-3 mb-3" type="button" onclick="login()">Login</button>
 
+            <p pb-0>Don't have an account?</p>
+            <a href="signup.html" class="btn btn-warning rounded-lg " role="button">Sign Up</a>
 
-  <div class="container-fluid container-fluid pt-5 mt-5 d-flex flex-column justify-content-center align-items-center">
+          </form>
+        </div>
+      </div>
 
-    <p class="page-title">Welcome back!</p>
-    <p class="page-title">Log in below.</p>
-
-    <div class="row">
-      <div id="login-form">
-
-        <form id="login">
-          <div>
-            <label for="login-username">Username:</label>
-            <input type="text" id="login-username" name="login-username">
-          </div>
-          <div>
-            <label for="login-password">Password:</label>
-            <input type="password" id="login-password" name="login-password">
-          </div>
-          <button class="btn btn-primary rounded-lg mt-3 mb-3" type="button" onclick="login()">Login</button>
-          
-          <p pb-0>Don't have an account?</p>
-          <a href="signup.html" class="btn btn-warning rounded-lg " role="button">Sign Up</a>
-
-        </form>
+      <div class="col-6 no-gutters">
+        <img src="Assets/login_photo-2.jpg" class="img-fluid w-100" alt="Waffle with fruit and Syrup">
       </div>
     </div>
-
-
+  </div>
 </body>
 
 </html>

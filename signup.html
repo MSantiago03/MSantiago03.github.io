@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Sign Up</title>
   <!-- Linking favicon -->
-  <link rel="icon" href="Assets/Plate_Mate_Logo.png" type="image/x-icon">
+  <link rel="icon" href="Assets/PlateMateFaviconTransparent.png" type="image/x-icon">
 
   <!-- Google Font Link -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,45 +21,47 @@
   <link rel="stylesheet" href="Stylesheets/main.css">
 </head>
 
-<body>
+<body class="no_scroll">
+  <div class="row">
+    <nav class="navbar navbar-expand-lg shadow-lg bg-light fixed-top px-5">
+      <a class="navbar-brand" href="index.html">
+        <img src="Assets/Plate_Mate_Logo.png" height="35" class="d-inline-block align-top" alt="">
+        <a class="navbar-text" href="index.html">Plate Mate Bowdoin</a>
+      </a>
+    </nav>
+  </div>
 
-  <nav class="navbar navbar-expand-lg shadow-lg navbar-light bg-light fixed-top px-5">
-    <a class="navbar-brand" href="index.html">
-      <img src="Assets/Plate_Mate_Logo.png" height="35" class="d-inline-block align-top" alt="">
-      <a class="navbar-text" href="index.html">Plate Mate Bowdoin</a>
-      <!-- Below is code of how I could potentially use columns to have slogan right under
-        platform name! -->
-      <!-- <div class="col-4">
-          <a class="navbar-text">Plate Mate Bowdoin</a>
-          <p class="slogan"> Let's Eat!</p>
-        </div> -->
-    </a>
-  </nav>
-  <div class="container-fluid pt-5 mt-5 d-flex flex-column justify-content-center align-items-center"
-    id="form-container">
-    <div class="row">
-      <!-- Our register form lets us create values for a new user.-->
-      <!-- Remember - you don't have to save these values separately. You can
-          use an object that bundles that information instead. -->
-      <div id="register-form">
-        <p class="page-title">Register Here</p>
-        <form id="register">
-          <div>
-            <label for="register-username">Username:</label>
-            <input type="text" id="register-username" name="register-username" required>
-          </div>
-          <div>
-            <label for="register-password">Password:</label>
-            <input type="password" id="register-password" name="register-password" required>
-          </div>
-
-          <button type="button" class="btn btn-primary rounded-lg mt-3" onclick="register()">Register</button>
-
-        </form>
-
-        <a href="index.html" class="btn btn-warning rounded-lg mt-2" role="button">Return to Home</a>
+  <div class="container-fluid">
+    <div class="row no-gutters">
+      <div class="col-md-6 no-gutters">
+        <img src="Assets/signup_photo-2.jpg" class="img-fluid w-100" alt="Italian Trulli">
       </div>
+
+      <div class="col-md-6 no-gutters">
+        <div class="container-fluid pt-5 mt-5 d-flex flex-column justify-content-center align-items-center"
+          id="form-container">
+          <div id="register-form">
+            <p class="page-title">Register Here</p>
+            <form id="register">
+              <div>
+                <label for="register-username">Username:</label>
+                <input type="text" id="register-username" name="register-username" required>
+              </div>
+              <div>
+                <label for="register-password">Password:</label>
+                <input type="password" id="register-password" name="register-password" required>
+              </div>
+              <button type="button" class="btn btn-primary rounded-lg mt-3" onclick="register()">Register</button>
+            </form>
+            <a href="index.html" class="btn btn-warning rounded-lg mt-2" role="button">Return to Home</a>
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
+
   </div>
 
 
