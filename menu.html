@@ -34,68 +34,69 @@
     </nav>
     <div class="container-fluid">
         <div class="row">
-          <p class="page-title">Dining Hall Status</p>
           <div class="col-md-6">
-            <div class="menu thorne">
-              <p class="menu-section center">Thorne Dining Hall</p>
+            <p class="page-title">Thorne Dining Hall</p>
+          </div>
+          <div class="col-md-6">
+            <p class="page-title">Moulton Dining Hall</p>
+          </div>
+        </div>
+        <div class="row">
+          <p class="med-text center">Dining Hall Status</p>
+          <div class="col-md-6">
+            <div class="rounded-container thorne-border">
+              <p class="med-text center">Students at Thorne: </p>
+              <p class="page-title center" id='thorne-pop'></p>
               <div class="center">
-                <input onclick="thorneStatusChange()" type="button" class="btn btn-light" value="Check In" id="thorne-status"></input>
+                <input onclick="thorneStatusChange()" type="button" class="btn" style="background-color: var(--blue); color: white" value="Check In" id="thorne-status"></input>
               </div>
-              <br>
-              <p style="text-align: center">Students at Thorne: </p>
-              <p style="text-align: center" class="page-title" id='thorne-pop'></p>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="menu moulton">
-              <p class="menu-section" style="text-align: center;">Moulton Dining Hall</p>
+            <div class="rounded-container moulton-border">
+              <p class="med-text center">Students at Moulton: </p>
+              <p class="page-title center" id='moult-pop'></p>
               <div class="center">
-                <input onclick="moultStatusChange()" type="button" class="btn btn-light" value="Check In" id="moult-status"></input>
+                <input onclick="moultStatusChange()" type="button" class="btn" style="background-color: var(--yellow); color: black" value="Check In" id="moult-status"></input>
               </div>
-              <br>
-              <p style="text-align: center">Students at Moulton: </p>
-              <p style="text-align: center" class="page-title" id='moult-pop'></p>
+              
             </div>
           </div>
-          
-
         </div>
       
         <div class="row">
-            <p class="page-title">Menus</p>
-            <p class="menu-section" style="text-align: center">Thursday, April 11th</p>
-            <p class="menu-section" style="text-align: center">Lunch</p>
+            <p class="med-text center">Thursday, April 11th</p>
         </div>
     
         <div class="row">
             <div class="col-md-6">
-              <div class="menu thorne">
-                <p class="menu-section" style="text-align: center;">Thorne Dining Hall</p>
+              <div class="rounded-container thorne-border">
                   <div id="thorne-menu">
-                    <p class="menu-section">Soup</p>
+                    <p class="med-text center">Lunch Menu</p>
+                    <p class="med-text">Main Courses</p>
                     <p>
-                      Hearty Vegetable Soup (VE) <br>
-                      Sweet Potato & Chipolte Soup (VE)
+                      Turkey, Bacon & Avocado Panini <br>
+                      Fried Fish with Tartar Sauce <br>
+                      Southwestern Chicken Burger <br>
+                      Vegetable Lentil Cottage Pie (VE) <br>
+                      Grilled Cheese <br>
+                      Pasta with Marinara Sauce (VE) <br>
                     </p>
-                    <p class="menu-section">Salads</p>
+                    <p class="med-text">Soup</p>
                     <p>
-                      Garlic, White Bean & Spin Salad (V) <br>
-                      Avocado Strawberry Caprese Salad (V)
+                      Turkey Barley Soup <br>
+                      Roasted Red Pepper & Corn Soup (V)
                     </p>
-                    <p class="menu-section">Main Courses</p>
+                    <p class="med-text">Salads</p>
                     <p>
-                      Spicy Maple Chicken Sandwich <br>
-                      Spicy Maple Tofu Sandwich <br>
-                      Fried Buffalo Chicken Burger <br>
-                      BBQ Pulled Pork <br>
-                      Black Bean Burger & Sweet Chili Slaw (VE) <br>
-                      Cheese & Vegetable Quesadilla (V)
+                      Lemon Orzo Salad (VE) <br>
+                      Spicy Watermelon Tomato Salad (V)
                     </p>
-                    <p class="menu-section">Vegetables</p>
+                    <p class="med-text">Vegetables</p>
                     <p>
-                      Steamed Peas (VE)
+                      Peas & Carrots (VE)
                     </p>
-                    <p class="menu-section">Desserts</p>
+                    <p class="med-text">Desserts</p>
                     <p>
                       Maple Bars
                     </p>
@@ -104,20 +105,10 @@
                 </div>
             </div>
             <div class="col-md-6">
-              <div class="menu moulton">
-                <p class="menu-section" style="text-align: center;">Moulton Dining Hall</p>
+              <div class="rounded-container moulton-border">
                 <div id="moult-menu">
-                  <p class="menu-section">Soup</p>
-                  <p>
-                    Hearty Vegetable Soup (VE) <br>
-                    Sweet Potato & Chipolte Soup (VE)
-                  </p>
-                  <p class="menu-section">Salads</p>
-                  <p>
-                    Garlic, White Bean & Spin Salad (V) <br>
-                    Avocado Strawberry Caprese Salad (V)
-                  </p>
-                  <p class="menu-section">Main Courses</p>
+                  <p class="med-text center">Lunch Menu</p>
+                  <p class="med-text">Main Courses</p>
                   <p>
                     Spicy Maple Chicken Sandwich <br>
                     Spicy Maple Tofu Sandwich <br>
@@ -126,11 +117,21 @@
                     Black Bean Burger & Sweet Chili Slaw (VE) <br>
                     Cheese & Vegetable Quesadilla (V)
                   </p>
-                  <p class="menu-section">Vegetables</p>
+                  <p class="med-text">Soup</p>
+                  <p>
+                    Hearty Vegetable Soup (VE) <br>
+                    Sweet Potato & Chipotle Soup (VE)
+                  </p>
+                  <p class="med-text">Salads</p>
+                  <p>
+                    Garlic, White Bean & Spin Salad (V) <br>
+                    Avocado Strawberry Caprese Salad (V)
+                  </p>
+                  <p class="med-text">Vegetables</p>
                   <p>
                     Steamed Peas (VE)
                   </p>
-                  <p class="menu-section">Desserts</p>
+                  <p class="med-text">Desserts</p>
                   <p>
                     Maple Bars
                   </p>
@@ -139,56 +140,9 @@
               </div>
             </div>
         </div>
-    
-        <!-- <button onclick="changeColor()">Change color</button>
-        <div id="my-div">
-            <p>Text should change color</p>
-        </div>
-    
-        <button onclick="getThorne()">Get Menu</button>
-        <div id="thorne-menu">
-        </div> -->
     </div>
 
-    <script>
-
-      let thorneCount = 347;
-      document.getElementById('thorne-pop').innerHTML = thorneCount;
-
-      let moultCount = 598;
-      document.getElementById('moult-pop').innerHTML = moultCount;
-
-      function thorneStatusChange() {
-        var elem = document.getElementById("thorne-status");
-        if (elem.value=="Check In") {
-          // localStorage.setItem('thorne-count', currentStatus + 1)
-          thorneCount = thorneCount + 1;
-          elem.value = "Check Out";
-          document.getElementById('thorne-pop').innerHTML = thorneCount;
-        } else {
-          // localStorage.setItem('thorne-count', currentStatus - 1)
-          thorneCount = thorneCount - 1;
-          elem.value = "Check In";
-          document.getElementById('thorne-pop').innerHTML = thorneCount;
-        }
-      }
-
-      function moultStatusChange() {
-        var elem = document.getElementById("moult-status");
-        if (elem.value=="Check In") {
-          // localStorage.setItem('thorne-count', currentStatus + 1)
-          moultCount = moultCount + 1;
-          elem.value = "Check Out";
-          document.getElementById('moult-pop').innerHTML = moultCount;
-        } else {
-          // localStorage.setItem('thorne-count', currentStatus - 1)
-          moultCount = moultCount - 1;
-          elem.value = "Check In";
-          document.getElementById('moult-pop').innerHTML = moultCount;
-        }
-      }
-    </script>
-    
+    <script src="Js/menu.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>

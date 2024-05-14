@@ -1,5 +1,5 @@
 :root {
-    --blue: #89cff0;
+    --blue: #4f88d7;
     --yellow: #ffda47;
 }
 
@@ -26,7 +26,7 @@ p {
     align-items: center;
   }
 
-.menu-section {
+.med-text {
     font-family: "Newsreader", serif;
     /* font-optical-sizing: auto; */
     font-weight: 700;
@@ -83,18 +83,20 @@ p {
     margin-right: auto;
 }
 
-.menu{
+.rounded-container{
     margin: 10px;
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
-.thorne{
-    background-color: var(--blue);
+.thorne-border{
+    border-style: solid;
+    border-color: var(--blue);
 }
 
-.moulton{
-    background-color: var(--yellow);
+.moulton-border{
+    border-style: solid;
+    border-color: var(--yellow);
 }
 
 /* This is to stack sign up input over each other */
