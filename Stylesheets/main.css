@@ -112,3 +112,70 @@ input, label {
 .no_scroll {
     overflow: hidden;
 }
+.student-container {
+    display: flex;
+    justify-content: space-between; /* Align items with space between them */
+    align-items: center; /* Vertically center align items */
+}
+
+/* Style for student text */
+.student-text {
+    font-family: "Newsreader", serif;
+    font-weight: 700;
+    font-size: 18px;  /* Adjust the size as needed */
+    color: black;
+}
+
+/* Button container */
+.button-container {
+    display: flex; /* Use flexbox for button container */
+}
+
+/* General button styles */
+button {
+    font-size: 14px;
+    padding: 7px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+/* Different styles for different button actions */
+button.add {
+    background-color: var(--blue);
+    color: white;
+}
+
+button.hide {
+    background-color: #f44336;
+    color: white;
+}
+
+button.undo {
+    background-color:var(--yellow);
+    color: black;
+}
+
+button.accept {
+    background-color: var(--blue);
+    color: white;
+}
+
+button.decline {
+    background-color: #f44336;
+    color: white;
+}
+
+button.remove {
+    background-color: var(--yellow);
+    color: black;
+}
+
+.student-text {
+    font-family: "Newsreader", serif;
+    font-weight: 700;
+    font-size: 18px;  /* Adjust the size as needed */
+    color: black;
+}
