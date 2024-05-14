@@ -1,149 +1,167 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dining Halls</title>
-    <!-- Linking favicon -->
-    <link rel="icon" href="Assets/Plate_Mate_Logo.png" type="image/x-icon">
-      <!-- Stylesheet -->
-    <link rel="stylesheet" href="Stylesheets/main.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="Js/script.js"></script>
-    <!-- Google Font Link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
-      rel="stylesheet">
 
-    <!-- <script type = "text/javascript" src="webscraper/menu-scrape.js"></script> -->
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dining Halls</title>
+  <!-- Linking favicon -->
+  <link rel="icon" href="Assets/Plate_Mate_Logo.png" type="image/x-icon">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="Stylesheets/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="Js/script.js"></script>
+  <!-- Google Font Link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
+    rel="stylesheet">
+
+  <!-- <script type = "text/javascript" src="webscraper/menu-scrape.js"></script> -->
+</head>
+
+<body>
+  <div>
+
+
     <nav class="navbar navbar-expand-lg shadow-lg navbar-light bg-light fixed-top px-5">
       <a class="navbar-brand" href="index.html">
         <img src="Assets/Plate_Mate_Logo.png" height="35" class="d-inline-block align-top" alt="">
         <a class="navbar-text" href="index.html">Plate Mate Bowdoin</a>
-        <!-- Below is code of how I could potentially use columns to have slogan right under
-        platform name! -->
-        <!-- <div class="col-4">
-          <a class="navbar-text">Plate Mate Bowdoin</a>
-          <p class="slogan"> Let's Eat!</p>
-        </div> -->
+        <ul class="navbar-nav ml-auto">
+          <!-- Menu Page CC -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">Menu</a>
+          </li>
+          <!-- Friends Page CC -->
+          <li class="nav-item active">
+            <a class="nav-link" href="friends.html">Friends <span class="sr-only">(current)</span></a>
+          </li>
+
+        </ul>
       </a>
     </nav>
-    <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-6">
-            <p class="page-title">Thorne Dining Hall</p>
-          </div>
-          <div class="col-md-6">
-            <p class="page-title">Moulton Dining Hall</p>
-          </div>
-        </div>
-        <div class="row">
-          <p class="med-text center">Dining Hall Status</p>
-          <div class="col-md-6">
-            <div class="rounded-container thorne-border">
-              <p class="med-text center">Students at Thorne: </p>
-              <p class="page-title center" id='thorne-pop'></p>
-              <div class="center">
-                <input onclick="thorneStatusChange()" type="button" class="btn" style="background-color: var(--blue); color: white" value="Check In" id="thorne-status"></input>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="rounded-container moulton-border">
-              <p class="med-text center">Students at Moulton: </p>
-              <p class="page-title center" id='moult-pop'></p>
-              <div class="center">
-                <input onclick="moultStatusChange()" type="button" class="btn" style="background-color: var(--yellow); color: black" value="Check In" id="moult-status"></input>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-      
-        <div class="row">
-            <p class="med-text center">Thursday, April 11th</p>
-        </div>
-    
-        <div class="row">
-            <div class="col-md-6">
-              <div class="rounded-container thorne-border">
-                  <div id="thorne-menu">
-                    <p class="med-text center">Lunch Menu</p>
-                    <p class="med-text">Main Courses</p>
-                    <p>
-                      Turkey, Bacon & Avocado Panini <br>
-                      Fried Fish with Tartar Sauce <br>
-                      Southwestern Chicken Burger <br>
-                      Vegetable Lentil Cottage Pie (VE) <br>
-                      Grilled Cheese <br>
-                      Pasta with Marinara Sauce (VE) <br>
-                    </p>
-                    <p class="med-text">Soup</p>
-                    <p>
-                      Turkey Barley Soup <br>
-                      Roasted Red Pepper & Corn Soup (V)
-                    </p>
-                    <p class="med-text">Salads</p>
-                    <p>
-                      Lemon Orzo Salad (VE) <br>
-                      Spicy Watermelon Tomato Salad (V)
-                    </p>
-                    <p class="med-text">Vegetables</p>
-                    <p>
-                      Peas & Carrots (VE)
-                    </p>
-                    <p class="med-text">Desserts</p>
-                    <p>
-                      Maple Bars
-                    </p>
+  </div>
 
-                  </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-              <div class="rounded-container moulton-border">
-                <div id="moult-menu">
-                  <p class="med-text center">Lunch Menu</p>
-                  <p class="med-text">Main Courses</p>
-                  <p>
-                    Spicy Maple Chicken Sandwich <br>
-                    Spicy Maple Tofu Sandwich <br>
-                    Fried Buffalo Chicken Burger <br>
-                    BBQ Pulled Pork <br>
-                    Black Bean Burger & Sweet Chili Slaw (VE) <br>
-                    Cheese & Vegetable Quesadilla (V)
-                  </p>
-                  <p class="med-text">Soup</p>
-                  <p>
-                    Hearty Vegetable Soup (VE) <br>
-                    Sweet Potato & Chipotle Soup (VE)
-                  </p>
-                  <p class="med-text">Salads</p>
-                  <p>
-                    Garlic, White Bean & Spin Salad (V) <br>
-                    Avocado Strawberry Caprese Salad (V)
-                  </p>
-                  <p class="med-text">Vegetables</p>
-                  <p>
-                    Steamed Peas (VE)
-                  </p>
-                  <p class="med-text">Desserts</p>
-                  <p>
-                    Maple Bars
-                  </p>
-
-                </div>
-              </div>
-            </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <p class="page-title">Thorne Dining Hall</p>
+      </div>
+      <div class="col-md-6">
+        <p class="page-title">Moulton Dining Hall</p>
+      </div>
+    </div>
+    <div class="row">
+      <p class="med-text center">Dining Hall Status</p>
+      <div class="col-md-6">
+        <div class="rounded-container thorne-border">
+          <p class="med-text center">Students at Thorne: </p>
+          <p class="page-title center" id='thorne-pop'></p>
+          <div class="center">
+            <input onclick="thorneStatusChange()" type="button" class="btn"
+              style="background-color: var(--blue); color: white" value="Check In" id="thorne-status"></input>
+          </div>
         </div>
+      </div>
+      <div class="col-md-6">
+        <div class="rounded-container moulton-border">
+          <p class="med-text center">Students at Moulton: </p>
+          <p class="page-title center" id='moult-pop'></p>
+          <div class="center">
+            <input onclick="moultStatusChange()" type="button" class="btn"
+              style="background-color: var(--yellow); color: black" value="Check In" id="moult-status"></input>
+          </div>
+
+        </div>
+      </div>
     </div>
 
-    <script src="Js/menu.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  </body>
+    <div class="row">
+      <p class="med-text center">Thursday, April 11th</p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="rounded-container thorne-border">
+          <div id="thorne-menu">
+            <p class="med-text center">Lunch Menu</p>
+            <p class="med-text">Main Courses</p>
+            <p>
+              Turkey, Bacon & Avocado Panini <br>
+              Fried Fish with Tartar Sauce <br>
+              Southwestern Chicken Burger <br>
+              Vegetable Lentil Cottage Pie (VE) <br>
+              Grilled Cheese <br>
+              Pasta with Marinara Sauce (VE) <br>
+            </p>
+            <p class="med-text">Soup</p>
+            <p>
+              Turkey Barley Soup <br>
+              Roasted Red Pepper & Corn Soup (V)
+            </p>
+            <p class="med-text">Salads</p>
+            <p>
+              Lemon Orzo Salad (VE) <br>
+              Spicy Watermelon Tomato Salad (V)
+            </p>
+            <p class="med-text">Vegetables</p>
+            <p>
+              Peas & Carrots (VE)
+            </p>
+            <p class="med-text">Desserts</p>
+            <p>
+              Maple Bars
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="rounded-container moulton-border">
+          <div id="moult-menu">
+            <p class="med-text center">Lunch Menu</p>
+            <p class="med-text">Main Courses</p>
+            <p>
+              Spicy Maple Chicken Sandwich <br>
+              Spicy Maple Tofu Sandwich <br>
+              Fried Buffalo Chicken Burger <br>
+              BBQ Pulled Pork <br>
+              Black Bean Burger & Sweet Chili Slaw (VE) <br>
+              Cheese & Vegetable Quesadilla (V)
+            </p>
+            <p class="med-text">Soup</p>
+            <p>
+              Hearty Vegetable Soup (VE) <br>
+              Sweet Potato & Chipotle Soup (VE)
+            </p>
+            <p class="med-text">Salads</p>
+            <p>
+              Garlic, White Bean & Spin Salad (V) <br>
+              Avocado Strawberry Caprese Salad (V)
+            </p>
+            <p class="med-text">Vegetables</p>
+            <p>
+              Steamed Peas (VE)
+            </p>
+            <p class="med-text">Desserts</p>
+            <p>
+              Maple Bars
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="Js/menu.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
