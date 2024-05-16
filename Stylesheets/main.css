@@ -179,3 +179,7 @@ button.remove {
     font-size: 18px;  /* Adjust the size as needed */
     color: black;
 }
+
+.credentials {
+    margin-left: 40px; /* Adjust the value as needed */
+}
