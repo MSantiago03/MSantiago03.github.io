@@ -7,11 +7,15 @@
   <title>Dining Halls</title>
   <!-- Linking favicon -->
   <link rel="icon" href="Assets/PlateMateFaviconTransparent.png" type="image/x-icon">
+
   <!-- Stylesheet -->
   <link rel="stylesheet" href="Stylesheets/main.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+      <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="Js/script.js"></script>
+  
   <!-- Google Font Link -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,19 +27,18 @@
 </head>
 
 <body>
+  <!--
   <div>
-
-
     <nav class="navbar navbar-expand-lg shadow-lg navbar-light bg-light fixed-top px-5">
       <a class="navbar-brand" href="index.html">
         <img src="Assets/Plate_Mate_Logo.png" height="35" class="d-inline-block align-top" alt="">
         <a class="navbar-text" href="index.html">Plate Mate Bowdoin</a>
         <ul class="navbar-nav ml-auto">
-          <!-- Menu Page CC -->
+          Menu Page CC
           <li class="nav-item">
-            <a class="nav-link" href="#">Menu</a>
+            <a class="nav-link" href="#">Menus</a>
           </li>
-          <!-- Friends Page CC -->
+          Friends Page CC
           <li class="nav-item active">
             <a class="nav-link" href="friends.html">Friends <span class="sr-only">(current)</span></a>
           </li>
@@ -43,9 +46,30 @@
         </ul>
       </a>
     </nav>
+  </div> 
+  -->
+  <div class="row">
+    <nav class="navbar navbar-expand-lg shadow-lg bg-light fixed-top px-5">
+        <a class="navbar-brand" href="index.html">
+            <img src="Assets/Plate_Mate_Logo.png" height="35" class="d-inline-block align-top" alt="">
+            <a class="navbar-text" href="index.html">Plate Mate Bowdoin</a>
+        </a>
+        <ul class="navbar-nav ml-auto">
+            <!-- Menu Page CC -->
+            <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menus</a>
+            </li>
+            <!-- Friends Page CC -->
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Friends <span class="sr-only">(current)</span></a>
+            </li>
+
+        </ul>
+
+    </nav>
   </div>
 
-  <div class="container-fluid">
+  <div class="container-fluid pt-5 mt-5">
     <div class="row">
       <div class="col-md-6">
         <p class="page-title">Thorne Dining Hall</p>
@@ -54,9 +78,15 @@
         <p class="page-title">Moulton Dining Hall</p>
       </div>
     </div>
+
     <div class="row">
-      <p class="med-text center">Dining Hall Status</p>
-      <div class="col-md-6">
+      <div class="col-lg-12 col-md-12">
+        <p class="med-text center">Dining Hall Status</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
         <div class="rounded-container thorne-border">
           <p class="med-text center">Students at Thorne: </p>
           <p class="page-title center" id='thorne-pop'></p>
@@ -66,7 +96,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-lg-6 col-md-6">
         <div class="rounded-container moulton-border">
           <p class="med-text center">Students at Moulton: </p>
           <p class="page-title center" id='moult-pop'></p>
@@ -80,7 +110,9 @@
     </div>
 
     <div class="row">
-      <p class="med-text center">Thursday, April 11th</p>
+      <div class="col-lg-12 col-md-12">
+        <p class="med-text center">Wednesday, May 15th</p>
+      </div>
     </div>
 
     <div class="row">
