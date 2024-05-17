@@ -21,7 +21,7 @@ that helps find all thi information all in one place. Plate Mate Bowdoin allows 
 - This way users can create an account and sign in and have a dynamic website.
 
 ## Challenges we ran into
-- We do have some code that webscrapes but  were are not able to fromat it so we used filler menus instead. We used Python and Selenium for they code we did not include for the final model.
+- We do have some code that webscrapes but were are not able to fromat it so we used filler menus instead. We used Python and Selenium for they code we did not include for the final model.
 - UI Style issues that arrose when trying to make the website sleek, clean, consistent, and aesthetic.
 
 ## Accomplishments that we're proud of
@@ -30,3 +30,5 @@ that helps find all thi information all in one place. Plate Mate Bowdoin allows 
 
 ## What we learned
 - We learned API endpoints might be the better option (if available) when tryint to web scrape. It might have been easier as we could then store the different parts into some data structure.
+- In order to have a fully functional product, we should collaborate with Bowdoin to get more accurate information for students.
+- We need a database to connnect students but that is outside the scope of this class.
