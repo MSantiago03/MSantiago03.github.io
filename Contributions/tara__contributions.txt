@@ -1,0 +1,7 @@
+- Contributed to written sections in all PQs
+- Provided design ideas and feedback in initial designing process
+- Conducted several user interviews
+- Contributed to figuring out menu scraping code (not used in final prototype)
+- Fixed UI bugs with menus and friends buttons in final prototype website
+- In final report, wrote abstract and methods section
+- Contributed to discussion and approach section

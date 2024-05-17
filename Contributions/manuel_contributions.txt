@@ -1,0 +1,6 @@
+- Provided valuable input for the direction of Plate Mate Platform and what the site should be like.
+- Discussed with the team what aesthetic, design heuristics, and practices to apply to pages.
+- Designed and implemented index and friends page. Styled signup and login pages. 
+- Worked to make these pages dynamic such as having a friend request system which uses local storage 
+  and JavaScript to store friends.
+- Contributed to written sections in all PQs (eg. creating personas)

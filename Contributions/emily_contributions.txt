@@ -1,0 +1,6 @@
+- Compiled group work done from shared Google Doc into Overleaf for all PQs; contributed written work
+ to each PQ
+- Designed the Menu page, including implementing the Javascript check in/check out feature; Javascript
+ for login and sign up.
+- Wrote the Related Work and Results sections of the final paper and contributed to the Discussion section
+- Provided the initial design for PQ3 from which we built our initial prototype.
