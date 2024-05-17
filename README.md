@@ -1,6 +1,4 @@
 # Plate Mate Bowdoin
-Inside this subfolder, you should also include a Markdown documentation file named README.md.  You may structure your documentation as you see fit, but it must be clear how to configure and use your project.  Answer any questions t
-
 # Visit website:
 https://msantiago03.github.io/
 
@@ -14,11 +12,10 @@ that helps find all thi information all in one place. Plate Mate Bowdoin allows 
 ## What it does
 - Display current meal at both dining halls (webscrapping down and filler currently present for meals)
 - Users can input where they are going and platform takes tally to display above menus.
-- Friends page employs a Friend Request System that allows users to:
+- Friends page employs a Friend Request System that allows users to mange friends:
   - Accept Requests: meaning they add another student to their list of friends
   - See where their friends are dining
-  - Quick add friends and undo any sent friend requests that have not been accepted yet.
-  - 
+  - Quick add friends and undo any sent friend requests that have not been accepted yet. Since we are using local storage this doesn't connect with other actuall user but is dynamic to show what it could look like.
 ## How we built it
 - Used Bootstrap, HMTL, CSS, Javascript and local storage to mimick a real database.
 - This way users can create an account and sign in and have a dynamic website.
